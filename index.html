@@ -2,183 +2,66 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>IA & Machine Learning | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IA & ML – TP1 | Santiago Nieto</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fb;
-      color: #2c3e50;
-      line-height: 1.6;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #e5e7eb;
+      color: #1f2937;
     }
-
     header {
       background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #ffffff;
-      padding: 3rem 1.5rem;
+      color: white;
       text-align: center;
+      padding: 3.5rem 1.5rem;
     }
-
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.4rem;
-    }
-
-    header p {
-      max-width: 760px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      opacity: 1;
-    }
-
     main {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 3rem auto;
       padding: 0 1.5rem;
     }
-
     section {
-      background: #ffffff;
-      border-radius: 10px;
+      background: white;
       padding: 2rem;
+      border-radius: 12px;
       margin-bottom: 2rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
-
-    h2 {
+    h2 { color: #1e3c72; }
+    a {
       color: #1e3c72;
-      margin-top: 0;
+      font-weight: 600;
+      text-decoration: none;
     }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
     footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.9rem;
       color: #6b7280;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #1e3c72;
-      padding: 0.3rem 0.7rem;
-      border-radius: 6px;
-      margin: 0.2rem;
-      font-size: 0.85rem;
     }
   </style>
 </head>
-<body>
 
+<body>
 <header>
-  <h1>🤖 IA & Machine Learning</h1>
-  <p>
-    Trabajo Práctico 1 – Análisis Exploratorio de Datos y Regresión Lineal
-  </p>
+  <h1>🤖 Inteligencia Artificial & Machine Learning</h1>
+  <p>Trabajos prácticos – Certificación Avanzada en Ciencia de Datos (ITBA)</p>
 </header>
 
 <main>
-
   <section>
-    <h2>📊 Descripción</h2>
-    <p>
-      Este trabajo introduce los fundamentos de Machine Learning mediante un enfoque teórico y práctico,
-      aplicando análisis exploratorio de datos y regresión lineal sobre un dataset real.
-    </p>
-  </section>
-
-  <section>
-    <h2>🧠 Contenidos</h2>
+    <h2>📂 Trabajos Prácticos</h2>
     <ul>
-      <li>Importancia del testeo y validación de modelos</li>
-      <li>Análisis exploratorio del dataset <strong>mtcars</strong></li>
-      <li>Definición de variable objetivo y variables explicativas</li>
-      <li>Introducción a modelos de regresión</li>
+      <li><a href="TP1/index.html">TP1 – Análisis Exploratorio y Regresión Lineal</a></li>
+      <li><a href="TP2/index.html">TP2 – Aprendizaje Supervisado</a></li>
+      <li><a href="TP3/index.html">TP3 – Aprendizaje No Supervisado</a></li>
     </ul>
   </section>
-
-  <section>
-    <h2>📈 Dataset</h2>
-    <p>
-      Dataset <strong>mtcars</strong> (librería base de R) con 32 observaciones y 11 variables cuantitativas,
-      orientado al análisis del consumo de combustible.
-    </p>
-  </section>
-
-  <section>
-    <h2>🛠 Tecnologías</h2>
-    <span class="tag">R</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">EDA</span>
-    <span class="tag">Regresión Lineal</span>
-    <span class="tag">Análisis de Datos</span>
-  </section>
-<section>
-  <h2>💻 Código Utilizado</h2>
-  <p>
-    Para el desarrollo del trabajo se utilizó el dataset <strong>mtcars</strong>,
-    disponible en la librería base de R. A continuación se muestra el código
-    empleado para la exploración inicial y el planteo del modelo de regresión.
-  </p>
-
-  <pre><code>
-# Carga del dataset
-data(mtcars)
-datos <- mtcars
-
-# Exploración inicial
-head(datos)
-dim(datos)
-summary(datos)
-
-# Modelo de regresión lineal
-modelo <- lm(mpg ~ ., data = datos)
-summary(modelo)
-  </code></pre>
-</section>
-
-  <section>
-  <h2>📊 Resultados Obtenidos</h2>
-  <ul>
-    <li>Se identificó una relación significativa entre el consumo de combustible (mpg) y variables como el peso, la potencia y la cantidad de cilindros.</li>
-    <li>El análisis exploratorio permitió comprender la distribución y escala de las variables del dataset.</li>
-    <li>El modelo de regresión lineal permite explicar el consumo de combustible en función de múltiples características del vehículo.</li>
-    <li>Se destaca la importancia de evaluar el modelo antes de su utilización para evitar errores de generalización.</li>
-  </ul>
-</section>
-
-  <section>
-  <h2>🧠 Enfoque del Trabajo</h2>
-  <p>
-    El foco principal del trabajo no está en la optimización del modelo,
-    sino en comprender la importancia del análisis exploratorio, la validación
-    y el testeo de modelos de Machine Learning como paso previo a su aplicación
-    en escenarios reales.
-  </p>
-</section>
-
-  <section>
-    <h2>📂 Repositorio</h2>
-    <p>
-      Este trabajo forma parte del repositorio <strong>IA+ML</strong>.
-    </p>
-    <p>
-      👉 <a href="https://github.com/nietosantiago/IA-ML" target="_blank">
-        Ver repositorio en GitHub
-      </a>
-    </p>
-  </section>
-
 </main>
 
 <footer>
-  © 2025 · Santiago Nieto · Data & Machine Learning
+  © 2025 · Santiago Nieto
 </footer>
-
 </body>
 </html>
