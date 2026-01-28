@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TP2 – Aprendizaje Supervisado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>
+  <h1>TP2 – Aprendizaje Supervisado</h1>
+  <p>Partición de datos y validación</p>
+</header>
+
+<main>
+<section>
+<h2>📈 Dataset</h2>
+<p><strong>mtcars</strong> – consumo de combustible (mpg).</p>
+</section>
+
+<section>
+<h2>🧪 Partición</h2>
+<pre><code>
+library(caret)
+set.seed(39264027)
+trainIndex <- createDataPartition(mtcars$mpg, p = .75)
+</code></pre>
+</section>
+
+<section>
+<h2>📊 Aprendizajes</h2>
+<ul>
+<li>Separación correcta train / test</li>
+<li>Necesidad de evaluar modelos</li>
+<li>Importancia de la reproducibilidad</li>
+</ul>
+</section>
+</main>
+
+<footer>© 2025 · Santiago Nieto</footer>
+</body>
+</html>
