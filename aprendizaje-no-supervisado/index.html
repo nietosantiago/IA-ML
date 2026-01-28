@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TP3 – Aprendizaje No Supervisado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>
+  <h1>TP3 – Aprendizaje No Supervisado</h1>
+  <p>Clustering con K-Means</p>
+</header>
+
+<main>
+<section>
+<h2>📈 Dataset</h2>
+<p><strong>cheddar</strong> – librería faraway.</p>
+</section>
+
+<section>
+<h2>💻 Código</h2>
+<pre><code>
+library(faraway)
+data(cheddar)
+set.seed(39264027)
+kmeans(cheddar[, -1], centers = 4)
+</code></pre>
+</section>
+
+<section>
+<h2>📊 Resultados</h2>
+<ul>
+<li>4 clusters bien diferenciados</li>
+<li>Grupo 3 con mayor puntaje de sabor</li>
+<li>Relación entre componentes químicos y taste</li>
+</ul>
+</section>
+</main>
+
+<footer>© 2025 · Santiago Nieto & Aitor Ortuño</footer>
+</body>
+</html>
