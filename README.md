@@ -1,44 +1,61 @@
 # 🤖 Inteligencia Artificial & Machine Learning  
-## Trabajo Práctico 1 – Análisis Exploratorio y Regresión
+## Trabajo Práctico 1 – Análisis Exploratorio y Regresión Lineal
 
 📘 **Certificación Avanzada en Ciencia de Datos**  
-📍 ITBA  
+🏫 **ITBA**  
 👤 **Autor:** Santiago Nieto  
 📅 **Año:** 2025  
 
 ---
 
 ## 📊 Descripción del Trabajo
-Este trabajo práctico aborda conceptos fundamentales de **Inteligencia Artificial y Machine Learning**, combinando una instancia teórica con un **ejercicio práctico de regresión lineal** y análisis exploratorio de datos.
+Este trabajo práctico introduce conceptos fundamentales de **Inteligencia Artificial y Machine Learning**, combinando un enfoque **teórico** con un **ejercicio práctico de análisis exploratorio de datos y regresión lineal**.
 
-El objetivo principal es comprender la importancia de la validación de modelos y aplicar técnicas básicas de modelado predictivo sobre un dataset real.
+El objetivo principal es comprender la importancia del **análisis previo**, el **testeo** y la **validación de modelos** antes de su aplicación en escenarios reales.
+
+---
+
+## 🏢 Contexto y Motivación
+En proyectos de Machine Learning, aplicar un modelo sin comprender los datos puede generar conclusiones erróneas.  
+Este trabajo busca reforzar la idea de que el **análisis exploratorio** es un paso clave para:
+
+- Comprender la estructura del dataset  
+- Identificar relaciones entre variables  
+- Reducir errores de generalización  
 
 ---
 
 ## 🧠 Contenidos Desarrollados
 
-### 🔹 Parte Teórica
+### 🔹 Enfoque Teórico
 - Importancia del testeo de modelos de Machine Learning
-- Evaluación del desempeño y comparación entre modelos
-- Generalización y prevención del overfitting
+- Evaluación conceptual del desempeño de un modelo
+- Riesgos de overfitting y mala generalización
 
 ---
 
-### 🔹 Parte Práctica – Regresión
-- **Dataset utilizado:** `mtcars` (librería base de R)
-- **Cantidad de registros:** 32
-- **Cantidad de variables:** 11
-- **Tipo de variables:** Cuantitativas
+### 🔹 Enfoque Práctico
+- Exploración inicial del dataset
+- Identificación de variables relevantes
+- Planteo de un modelo de regresión lineal múltiple
 
-#### 🎯 Variable objetivo
+---
+
+## 📈 Dataset Utilizado
+- **Nombre:** `mtcars`  
+- **Origen:** Librería base de R  
+- **Registros:** 32  
+- **Variables:** 11 (todas cuantitativas)  
+
+### 🎯 Variable objetivo
 - Consumo de combustible (**mpg**)
 
-#### 📥 Variables explicativas
+### 📥 Variables explicativas
 - Cylinders (`cyl`)
 - Displacement (`disp`)
 - Horsepower (`hp`)
-- Rear axle ratio (`drat`)
 - Weight (`wt`)
+- Rear axle ratio (`drat`)
 - Quarter mile time (`qsec`)
 - Engine type (`vs`)
 - Transmission (`am`)
@@ -47,35 +64,57 @@ El objetivo principal es comprender la importancia de la validación de modelos 
 
 ---
 
-## 📈 Análisis Exploratorio
-- Inspección inicial del dataset (`head`, `dim`, `summary`)
-- Comprensión de relaciones entre variables
-- Identificación de variables relevantes para el modelo de regresión
+## 💻 Código Utilizado
+El trabajo utiliza funciones básicas de R para realizar la exploración inicial del dataset y plantear el modelo de regresión:
+
+- `data(mtcars)`
+- `head()`
+- `dim()`
+- `summary()`
+- `lm()`
+
+El código completo se presenta de forma resumida y comentada en la visualización del proyecto.
 
 ---
 
-## 🛠 Herramientas Utilizadas
-- **Lenguaje:** R
-- **Técnicas:**  
-  - Análisis Exploratorio de Datos (EDA)  
-  - Regresión Lineal  
-  - Evaluación conceptual de modelos  
+## 📊 Resultados y Aprendizajes
+- Se identificaron relaciones significativas entre el consumo de combustible y variables como peso, potencia y cantidad de cilindros.
+- El análisis exploratorio permitió comprender la escala y comportamiento de las variables.
+- Se refuerza la importancia de evaluar un modelo antes de su uso para evitar conclusiones erróneas.
 
 ---
 
 ## 🎯 Objetivo del Trabajo
-- Aplicar conceptos básicos de Machine Learning
-- Comprender el rol del análisis exploratorio previo
-- Sentar bases para modelos predictivos más avanzados
+- Introducir conceptos básicos de Machine Learning
+- Aplicar análisis exploratorio previo al modelado
+- Comprender el rol del testeo y la validación de modelos
+
+---
+
+## 🛠 Herramientas y Tecnologías
+- **Lenguaje:** R  
+- **Conceptos:**  
+  - Machine Learning  
+  - Análisis Exploratorio de Datos (EDA)  
+  - Regresión Lineal  
+  - Validación de modelos  
+
+---
+
+## 🌐 Visualización del Proyecto
+Este trabajo cuenta con una visualización web que resume el enfoque, el código utilizado y los resultados principales.
+
+👉 **GitHub Pages:**  
+`index.html`
 
 ---
 
 ## 📂 Repositorio
-Este trabajo forma parte del repositorio **IA+ML**, donde se incluyen distintos trabajos prácticos relacionados con inteligencia artificial y aprendizaje automático.
+Este trabajo forma parte del repositorio **IA+ML**, que agrupa distintos trabajos prácticos relacionados con Inteligencia Artificial y Machine Learning.
 
-👉 **Repositorio:**  
-https://github.com/nietosantiago/IA-ML
+👉 https://github.com/nietosantiago/IA-ML
 
 ---
 
 📬 Para consultas o colaboraciones, podés contactarme vía LinkedIn.
+
