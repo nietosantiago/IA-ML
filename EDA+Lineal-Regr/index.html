@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA & ML – TP1 | Santiago Nieto</title>
+
+  <style>
+    :root {
+      --primary: #1e3c72;
+      --secondary: #2a5298;
+      --bg: #e5e7eb;
+      --card: #ffffff;
+      --text: #1f2937;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #ffffff;
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.1rem;
+      color: #ffffff;
+      opacity: 1;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.3rem;
+    }
+
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 1.2rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0e7ff;
+      color: var(--primary);
+      padding: 0.35rem 0.7rem;
+      border-radius: 6px;
+      margin: 0.2rem;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🤖 Inteligencia Artificial & Machine Learning</h1>
+  <p>
+    Trabajo Práctico 1 – Análisis Exploratorio de Datos y Regresión Lineal
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>📊 Descripción</h2>
+    <p>
+      Este trabajo práctico combina teoría y práctica para introducir los
+      fundamentos de Machine Learning, enfocándose en la importancia del análisis
+      exploratorio y el testeo de modelos.
+    </p>
+  </section>
+
+  <section>
+    <h2>📈 Dataset</h2>
+    <p>
+      Se utilizó el dataset <strong>mtcars</strong>, disponible en la librería base
+      de R, con 32 observaciones y 11 variables cuantitativas, orientado al análisis
+      del consumo de combustible.
+    </p>
+  </section>
+
+  <section>
+    <h2>💻 Código Utilizado</h2>
+    <pre><code>
+# Carga del dataset
+data(mtcars)
+datos <- mtcars
+
+# Exploración inicial
+head(datos)
+dim(datos)
+summary(datos)
+
+# Modelo de regresión lineal
+modelo <- lm(mpg ~ ., data = datos)
+summary(modelo)
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>📊 Resultados</h2>
+    <ul>
+      <li>Relación significativa entre consumo de combustible y peso del vehículo.</li>
+      <li>Impacto relevante de la potencia y la cantidad de cilindros.</li>
+      <li>Importancia del análisis exploratorio previo al modelado.</li>
+      <li>Necesidad de evaluar y validar modelos antes de su uso.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🛠 Tecnologías</h2>
+    <span class="tag">R</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">EDA</span>
+    <span class="tag">Regresión Lineal</span>
+    <span class="tag">Análisis de Datos</span>
+  </section>
+
+  <section>
+    <h2>📂 Repositorio</h2>
+    <p>
+      Este trabajo forma parte del repositorio <strong>IA+ML</strong>.
+    </p>
+    <p>
+      👉 <a href="https://github.com/nietosantiago/IA-ML" target="_blank">
+        Ver repositorio en GitHub
+      </a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 · Santiago Nieto · IA & Machine Learning
+</footer>
+
+</body>
+</html>
