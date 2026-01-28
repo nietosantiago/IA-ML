@@ -118,6 +118,49 @@
     <span class="tag">Regresión Lineal</span>
     <span class="tag">Análisis de Datos</span>
   </section>
+<section>
+  <h2>💻 Código Utilizado</h2>
+  <p>
+    Para el desarrollo del trabajo se utilizó el dataset <strong>mtcars</strong>,
+    disponible en la librería base de R. A continuación se muestra el código
+    empleado para la exploración inicial y el planteo del modelo de regresión.
+  </p>
+
+  <pre><code>
+# Carga del dataset
+data(mtcars)
+datos <- mtcars
+
+# Exploración inicial
+head(datos)
+dim(datos)
+summary(datos)
+
+# Modelo de regresión lineal
+modelo <- lm(mpg ~ ., data = datos)
+summary(modelo)
+  </code></pre>
+</section>
+
+  <section>
+  <h2>📊 Resultados Obtenidos</h2>
+  <ul>
+    <li>Se identificó una relación significativa entre el consumo de combustible (mpg) y variables como el peso, la potencia y la cantidad de cilindros.</li>
+    <li>El análisis exploratorio permitió comprender la distribución y escala de las variables del dataset.</li>
+    <li>El modelo de regresión lineal permite explicar el consumo de combustible en función de múltiples características del vehículo.</li>
+    <li>Se destaca la importancia de evaluar el modelo antes de su utilización para evitar errores de generalización.</li>
+  </ul>
+</section>
+
+  <section>
+  <h2>🧠 Enfoque del Trabajo</h2>
+  <p>
+    El foco principal del trabajo no está en la optimización del modelo,
+    sino en comprender la importancia del análisis exploratorio, la validación
+    y el testeo de modelos de Machine Learning como paso previo a su aplicación
+    en escenarios reales.
+  </p>
+</section>
 
   <section>
     <h2>📂 Repositorio</h2>
